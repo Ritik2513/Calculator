@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply w-full h-12 bg-emerald-600 text-white rounded-md shadow-md transition duration-200 font-bold flex items-center justify-center;
+}
+
+.btn:hover {
+  @apply bg-emerald-700; /* Darker green on hover */
+}
+
+.btn:active {
+  @apply bg-emerald-800; /* Even darker green on active press */
+}

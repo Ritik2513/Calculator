@@ -1,0 +1,4 @@
+Why e.target.innerText not e.target.value?
+Ans: Since you are dealing with button elements (<button>), they don't have a value property by default, but they do contain text within them (like "1", "2", "+", etc.). This text is what is rendered on the button and what you want to append to the current calculator input. innerText retrieves that text.
+
+If you used e.target.value, it would return undefined for a button, because buttons don’t have a value attribute unless explicitly set. e.target.innerText correctly retrieves the text content of the button, which you are trying to use in your calculator input.
